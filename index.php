@@ -50,8 +50,18 @@
   <title>Document</title>
 </head>
 <body>
+   
   <?php
-  var_dump($hotels);
+  
+  for ( $i = 0; $i < count($hotels); $i++){
+    echo $hotels[$i]['name'];
+    echo $hotels[$i]['description'];
+    echo $hotels[$i]['parking'];
+    echo $hotels[$i]['vote'];
+    echo $hotels[$i]['distance_to_center'];
+    echo '<hr>';
+  };
+  
   ?>
 </body>
 </html>
