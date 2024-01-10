@@ -78,10 +78,14 @@
           echo '<tr>';
           echo '<th scope="row">'.$key.'</th>';
           echo '<td>'.$hotel['name'].'</td>';
-          echo '<td>'.$hotel['description'].'</td>';
-          echo '<td>'.$hotel['parking'].'</td>';
+           echo '<td>'.$hotel['description'].'</td>';
+          if($hotel['parking']){
+            echo '<td>Si</td>';
+          }else{
+            echo '<td>No</td>';
+          }
           echo '<td>'.$hotel['vote'].'</td>';
-          echo '<td>'.$hotel['distance_to_center'].'</td>';
+          echo '<td>'.$hotel['distance_to_center'].' km</td>';
           echo '</tr>';
         
         };
