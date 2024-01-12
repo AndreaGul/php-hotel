@@ -72,24 +72,20 @@
     </tr>
   </thead>
   <tbody>
-    
-        <?php
-        foreach( $hotels as $key => $hotel){
-          echo '<tr>';
-          echo '<th scope="row">'.$key.'</th>';
-          echo '<td>'.$hotel['name'].'</td>';
-           echo '<td>'.$hotel['description'].'</td>';
-          if($hotel['parking']){
-            echo '<td>Si</td>';
-          }else{
-            echo '<td>No</td>';
-          }
-          echo '<td>'.$hotel['vote'].'</td>';
-          echo '<td>'.$hotel['distance_to_center'].' km</td>';
-          echo '</tr>';
-        
-        };
-        ?>
+       <?php foreach( $hotels as $key => $hotel):?>
+          <tr>
+            <th scope="row"><?php echo $key; ?></th>
+            <td><?php echo $hotel['name']; ?></td>
+            <td><?php echo $hotel['description']; ?></td>
+            <?php if ($hotel['parking']): ?> 
+              <td>Si</td>
+            <?php else: ?> 
+              <td>No</td>
+            <?php endif;?>
+            <td><?php echo $hotel['vote']; ?></td>
+            <td><?php echo $hotel['distance_to_center']; ?></td>
+          </tr>
+        <?php endforeach; ?>
     
       
   </tbody>
