@@ -132,7 +132,7 @@ if ($vote) {
     </form>
   </div>
 
-
+  <!-- se l'array filtere hotel non e vuoto restituira true -->
   <?php if (count($filtered_hotels)) : ?>
     <table class="table">
       <thead>
