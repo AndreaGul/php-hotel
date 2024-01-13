@@ -107,7 +107,7 @@ if ($vote) {
           <div class="form-check ">
             <input class="form-check-input align-middle" type="checkbox" value="1" id="parking" name="parking" <?php if ($parking) : ?> checked <?php endif; ?>>
             <label class="form-check-label" for="parking">
-              Default checkbox
+              Parcheggio
             </label>
           </div>
         </div>
@@ -123,7 +123,7 @@ if ($vote) {
         </div>
 
         <div class="col">
-          <button class="btn btn-primary ">Primary</button>
+          <button class="btn btn-primary ">Cerca</button>
         </div>
 
       </div>
